@@ -1,0 +1,79 @@
+<!doctype html>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<title>Digital Clock</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=index.css>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel=stylesheet>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN crossorigin=anonymous>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js integrity=sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL crossorigin=anonymous></script>
+</head>
+<body>
+<div class=header>
+<div class=header1>
+<image src=images/clock_logo.png class=image1></image>
+</div>
+<div class=header-content>
+<div class=time>Time</div>
+<div class=timer id=hr></div><span>:</span>
+<div class=timer id=min></div><span>:</span>
+<div class=timer id=sec></div><span> </span>
+<div class=time-convention id=ampm></div>
+</div>
+<div class=header-content2></div>
+<div class=header-content3></div>
+</div>
+<div class=content>
+<div class=set-time-table>
+<div class=input1>
+<img src=images/wake_up.png id=image><label for=form-select id=time-label>Set Wake up time</label>
+<select class=form-select id=time1 style=width:40%>
+<option class=time-options>6 AM-7 AM</option>
+<option class=time-options>7 AM-8 AM</option>
+<option class=time-options>8 AM-9 AM</option>
+</select>
+</div>
+<div class=input2>
+<img src=images/lunch_time.png id=image><label for=form-select id=time-label>Set lunch time</label>
+<select class=form-select id=time2 style=width:40%>
+<option class=time-options>12 AM-1 PM</option>
+<option class=time-options>1 PM-2 PM</option>
+<option class=time-options>2 PM-3 PM</option>
+</select>
+</div>
+<div class=input2>
+<img src=images/nap_time.png id=image><label for=form-select id=time-label>Set nap time</label>
+<select class=form-select id=time3 style=width:40%>
+<option class=time-options>4 PM-5 PM</option>
+<option class=time-options>5 PM-6 PM</option>
+<option class=time-options>6 PM-7 PM</option>
+</select>
+</div>
+<div class=input2>
+<img src=images/wake_up.png id=image><label for=form-select id=time-label>Set night time</label>
+<select class=form-select id=time4 style=width:40%>
+<option class=time-options>9 PM-10 PM</option>
+<option class=time-options>10 PM-11 PM</option>
+<option class=time-options>11 PM-12 PM</option>
+</select>
+</div>
+</div>
+<div class=content1>
+<p class=text id=text></p>
+</div>
+<div class=content2 id=img>
+</div>
+<div class=content3>
+<p class=display id=display></p>
+</div>
+<div class=content4>
+<p class=set-time id=set1 style=padding-top:10px>Wake Up Time :</p>
+<p class=set-time id=set2>Lunch Time :</p>
+<p class=set-time id=set3>Nap Time :</p>
+<p class=set-time id=set4>Night Time :</p>
+</div>
+<button type=button id=alarm onclick=set_alarm()><p id=text1>Set Alarm</p><p id=text2>Party Time!</p></button>
+</div>
+<script src=index.js></script>
+</body>
