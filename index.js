@@ -41,15 +41,15 @@ if(date.getHours()<20 && date.getHours()>15){
 
 
 if(date.getHours()<11 && date.getHours()>5){
-    document.getElementById("img").innerHTML = "<img src='images/Component 30 - 1.svg' width='530' height='350'>"
+    document.getElementById("img").innerHTML = "<img src='Component 30 - 1.svg' width='530' height='350'>"
 }else 
 if(date.getHours()<15 && date.getHours()>11){
-    document.getElementById("img").innerHTML = "<img src='images/Component 31 – 1.svg' width='530' height='350'>"
+    document.getElementById("img").innerHTML = "<img src='Component 31 – 1.svg' width='530' height='350'>"
 }else
 if(date.getHours()<20 && date.getHours()>15){
-    document.getElementById("img").innerHTML = "<img src='images/lunch_image.png' width='530' height='350'>"
+    document.getElementById("img").innerHTML = "<img src='lunch_image.png' width='530' height='350'>"
 }else{
-    document.getElementById("img").innerHTML = "<img src='images/Component 32 – 1.svg' width='530' height='350's>"
+    document.getElementById("img").innerHTML = "<img src='Component 32 – 1.svg' width='530' height='350's>"
 }
 
 
